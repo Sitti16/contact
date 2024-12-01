@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ajouter Font Awesome pour les icônes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    hello darling
+
+    <header>
+        <nav>
+            <!-- Optionnel : un menu de navigation si nécessaire -->
+           
+        </nav>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Nous serions ravis de recevoir votre message !</h2>
+            <form action="#" method="POST" aria-labelledby="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required aria-required="true"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 Tous droits réservés</p>
+        </div>
+    </footer>
+
 </body>
 </html>
